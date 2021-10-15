@@ -1,0 +1,155 @@
+---
+title: "Instalación Zotero"
+date: "2021-08-13"
+menu:
+  resource:
+    parent: Tutoriales
+type: docs
+weight: 4
+toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 1. Qué es Zotero
+
+[Zotero](www.zotero.org) es un software que almacena y administra las referencias bibliográficas, este no sólo es útil como aplicación sino que también tiene extensiones para navegadores como **Chrome, Mozilla Firefox, Safari y Opera**. Estos sincronizan la aplicación mientras se navega guardando los recursos a utilizar.
+
+Esta aplicación utiliza formatos para exportar y utilizar las referencias y uno de ellos es BibTeX.
+
+## 1.1 BibTeX
+
+[BibteX](http://www.bibtex.org/Format/de/) es un tipo archivos con un formato .bib, los cuales funcionan en conjunto a *Latex* para el uso de referencias bibliográficas
+
+Una entrada BibTeX inicia con una palabra después de `@` y una serie de etiquetas que definen las características de la entrada específica. Entre esas etiquetas pueden estar elementos como : autor, título, año, entre otros. Algunas etiquetas son obligatorias para ciertos tipos de entradas de BibTeX, otras son opcionales.
+
+### Etiquetas
+
+En BibTeX las etiquetas son especificadas por su nombre seguido de un signo igual y su contenido, se debe considerar que las etiquetas no distinguen entre mayúsculas y minúsculas y que el contenido debe ir entre comillas, por ejemplo:
+
+```
+@book`{"marx_1867",
+        title = {El Capital}, 
+        volume = {I}, 
+        author = {Marx, Karl}, 
+        year = {1867}, 
+        pages = {255–276}, 
+        file = {ruta}}`
+
+```
+
+
+
+Dentro del ejemplo es relevante la primera línea, ya que este nombre es el que nos permitirá traerla al texto. Si bien es útil conocer este formato de referencias, es un poco complejo al principio. Lo bueno es que hay varios software que administran referencias que convierten las referencias al formato .bib.
+
+## 1. 2 Better BibTeX (BBT)
+
+[Better BibTeX](https://retorque.re/zotero-better-bibtex/) cumple las funciones de BibTeX pero la ventaja es que se puede sincronizar para una actualización automática desde los software que gestionan las referencias. Para esto presentaremos la aplicación Better(bib)tex (BBT), que funciona dentro de [Zotero](www.zotero.org). Las ventajas de esto es que ambos son de código abierto
+
+BBT genera una colección con formtao .bib en base a librerías construidas en Zotero, estas se configuran una vez y luego se mantiene sincronizada.
+
+¡Pero antes de ver como funcionan debemos asegurarnos de tener todo instalado!
+
+# 2. Instalación de Zotero
+
+Para instalar Zotero deben ir al [link](https://www.zotero.org/) y apretar el botón **Download**
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/instalacion-zot.png)
+
+-   Luego, deben abrir el archivo descargado
+
+![](https://github.com/learn-R/taller-zotero/blob/main/input/img/image%20(11).png?raw=true)
+
+-   Una vez abran el archivo descargado, les aparecerá esta ventana donde deben apretar el botón *Continuar o Next \>*
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(1).png)
+
+-   Deben seleccionar la opción *Standard*
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(12).png)
+
+-   Luego establecer la ubicación del programa deben apretar *Upgrade*
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(13).png)
+
+-   finalmente deben apretar en *Finish*
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(15).png)
+
+-   Al abrirlo les aparecerá la interfaz del software
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(16).png)
+
+Ahora ya tenemos instalado Zotero, sin embargo no es suficiente, también debemos instalar la extensión BBT para facilitar la sincronización de los datos con el informe que queramos crear.
+
+# 2.1 Zotero y BBT
+
+Para descargar BBT deben ir al [link](https://retorque.re/zotero-better-bibtex/) y en la sección More ir a *Download*
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(7).png)
+
+-   Luego deben hacer click en el archivo con extensión .xpi, pero no deben abrirlo
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(9).png)
+
+{{< div "note" >}}
+
+Dentro de BBT hay varias versiones las cuales pueden irse actualizando, estas se encuentran en el botón compare
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(8).png)
+
+{{< /div >}}
+
+Para incorporarlo deben ir a Zotero en *Tools y Add-ons* / En español es en *Herramientas y complementos*
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(17).png)
+
+-   Les aparecerá una ventana emergente, deben ir a la esquina superior derecha, al icono de tuerca
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(18).png)
+
+-   Luego deben ir a *Install Add-on from file*, encontrar el archivo descargado (.xpi) de BBT
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(19).png)
+
+-   Una vez se encuentra se debe apretar el boton *Install Now*
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(21).png)
+
+-   Luego se debe reiniciar con el botón *Restart Now*
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(22).png)
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(23).png)
+
+Ahora ya tenemos el software que gestiona las referencias y la extensión para mantener sincronizadas las referencias. Sin embargo previo a ver como funcionan dejaremos instaladas las extensiones
+
+## 2.2 Instalación de extensión
+
+Para incluir la extensión de navegador de Zotero hay varias opciones según el navegador que utilicen
+
+-   [Chrome](https://chrome.google.com/webstore/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc?hl=es)
+
+    ![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(24).png)
+
+-   [Firefox](https://www.zotero.org/download/connectors)
+
+    ![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(29).png)
+
+-   [Microsoft Edge](https://www.zotero.org/download/connectors)
+
+    ![](https://github.com/learn-R/taller-zotero/raw/main/input/img/image%20(30).png)
+
+# 3. Flujo de trabajo
+
+Una vez teniendo instalado el software y todo lo necesario para empezar estableceremos el flujo de trabajo. Se debe considerar que este proceso es cíclico
+
+![](https://github.com/learn-R/taller-zotero/raw/main/input/img/flujo-zotero.png)
+
+# 4. Video tutorial en Youtube
+
+Recuerden que el [video de asociado a este tutorial]() y muchos más podrán encontrarlos en el [canal de youtube del curso](https://www.youtube.com/channel/UCqBUeqBttVjS6h8fawK8sWg)
+
+
