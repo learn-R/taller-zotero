@@ -1,0 +1,19 @@
+---
+title: "Untitled"
+author: "Dafne Jaime Vargas"
+date: "18-10-2021"
+output: html_document
+bibliography: input/taller.bib
+csl: input/cambridge-university-press-numeric.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+# Contenido
+
+Ejemplo de cita con formato y exportación manual [@browneLabormarketInequalityIntersections2007a]
+
+# Referencias

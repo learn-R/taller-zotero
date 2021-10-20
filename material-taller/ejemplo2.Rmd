@@ -1,0 +1,18 @@
+---
+title: "taller zotero"
+author: "Dafne Jaime Vargas"
+date: "30-09-2021"
+output: html_document
+bibliography: input/taller2.bib
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Contenido
+
+Ejemplo de cita con formato en link y exportación manual [@chileCOVID19Chile71]
+
+# Referencias
