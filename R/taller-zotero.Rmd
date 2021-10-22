@@ -3,9 +3,6 @@ title: "taller zotero"
 author: "Dafne Jaime Vargas"
 date: "30-09-2021"
 output: html_document
-editor_options: 
-  markdown: 
-    wrap: 72
 ---
 
 ```{r setup, include=FALSE}
@@ -38,7 +35,7 @@ trabajo más simple se hará el proceso de referenciar a través de Zotero.
 
 ![](https://github.com/learn-R/taller-zotero/raw/main/input/img/flujo-zotero.png)
 
-## 3.1 Almacenar
+## 3 Almacenar
 
 El primer paso es almacenar los datos que se han leído y recopilado. El
 almacenamiento inmediato de estos datos será de utilidad para el
@@ -51,7 +48,7 @@ reporte.
 Para esto **Zotero**, no sólo tiene la solución, sino que también
 existen diversas formas de hacerlo. Las cuales veremos a continuación
 
-### 3.2 Almacenar referencias de forma manual
+### 3.1 Almacenar referencias de forma manual
 
 Una de las formas más comunes (aunque no más fácil) es almacenar las
 referencias de forma manual.
@@ -73,13 +70,13 @@ Para esto debemos seguir los siguientes pasos:
 
 ![](https://github.com/learn-R/taller-zotero/raw/main/input/img/llenado-manual.png)
 
-### 3.3 Almacenar a través de la extensión de navegador
+### 3.2 Almacenar a través de la extensión de navegador
 
 Almacenar a través de la extensión del navegador web, es una de las
 opciones más simples de almacenamiento, solo debes seguir los siguientes
 pasos:
 
--   Paso 1: Dirigirte al artículo, noticia, vídeo que quieras almacenar
+-   Paso 1: Dirigirte al artículo, [noticia](https://www.cnnchile.com/coronavirus/chile-71-poblacion-6-17-recibido-primera-dosis_20211019/), vídeo que quieras almacenar
 
 -   Paso 2: Apretar el botón de la extensión
 
@@ -91,7 +88,7 @@ pasos:
 
 ![](https://github.com/learn-R/taller-zotero/raw/main/input/img/resultado-zotero-conect.png)
 
-### 3.4 Almacenar a través del identificador
+### 3.3 Almacenar a través del identificador
 
 Otra de las opciones que ofrece Zotero es el almacenamiento a través del
 identificador (DOI, ISBN, PMID o arXiv ID), los pasos a seguir son los
@@ -109,7 +106,7 @@ siguientes:
 
 ¡Listo!
 
-### 3.5 Almacenar por archivo
+### 3.4 Almacenar por archivo
 
 Una última forma de almacenar referencias es a través de archivos.
 
@@ -123,7 +120,7 @@ Una última forma de almacenar referencias es a través de archivos.
 
 ¡Listo!
 
-## 3.2 Exportar y formatos
+## 4. Exportar y formatos
 
 Una vez almacenados, se viene la siguiente etapa de nuestro flujo: la de
 ***exportación*** y hay dos opciones para exportar los archivos
@@ -165,18 +162,18 @@ pasos son los siguientes:
 
     ![](https://github.com/learn-R/taller-zotero/raw/main/input/img/bibliot-bibtex.png)
 
-## 3.3 Carpeta
+## 4.1 Carpeta
 
 ![](https://github.com/learn-R/slides/raw/main/img/01/flow-rproject.png)
 
-## 3.4 YAML: bibliography y csl
+## 4.2 YAML: bibliography y csl
 
 Para incluir las citas en un documento RMarkdown se debe tener en
 consideración dos aspectos, el archivo que almacena las citas y el
 formato en el que queremos referenciar. Por eso en el YAML se deben
 especificar estos dos aspectos
 
-### 3.4.1 Especificar carpeta de donde se extraen las referencias
+### 4.2.1 Especificar carpeta de donde se extraen las referencias
 
 Para este aspecto en el encabezado (YAML) debe especificarse con
 `bibliography` la ruta hacia el archivo, el nombre del archivo y su
@@ -193,7 +190,7 @@ Nuestro YAML quedaría así
     link-citations: yes
     ---
 
-### 3.4.2 formato de citación
+### 4.2.2 formato de citación
 
 Tan relevante como el reverenciar, lo es el formato en el que se
 referencia, para ello debemos ir al siguiente
@@ -261,7 +258,7 @@ Opción 2:
           
 ¡Listo!
 
-# 4. Citar en RMarkdown
+# 5. Citar en RMarkdown
 
 -   Ahora ya podemos citar, y es muy simple sólo debemos abrir nuestro
     RMarkdown
